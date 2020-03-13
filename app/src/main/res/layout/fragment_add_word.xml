@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.AddWordFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_one"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_add_word"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Add Word"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="20sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/search_regions_text_view"-->
+<!--        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="@dimen/_10sdp"-->
+<!--        android:layout_marginEnd="@dimen/_10sdp"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:text="@string/tap_to_select_region"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#4A4A4A"-->
+<!--        android:textSize="@dimen/_13sdp"-->
+<!--        app:icon="@drawable/ic_arrow_drop_down"-->
+<!--        app:iconGravity="end"-->
+<!--        app:iconSize="@dimen/_22sdp"-->
+<!--        app:iconTint="@color/grey_60"-->
+<!--        tools:ignore="RtlSymmetry" />-->
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/_1sdp"-->
+<!--        android:layout_marginStart="@dimen/_10sdp"-->
+<!--        android:layout_marginEnd="@dimen/_10sdp"-->
+<!--        android:background="@color/grey_60" />-->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mBtn_type_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/til_one"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Select Type Word"
+        android:textAllCaps="false"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        android:textColor="#4A4A4A"
+        app:icon="@drawable/ic_keyboard_arrow_down_black_24dp"
+        app:iconGravity="end"
+        app:iconSize="30dp"
+        app:iconTint="#000000"/>
+    <View
+        android:id="@+id/btn_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#000000"
+        android:layout_below="@+id/mBtn_type_word"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_three"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/btn_view"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_translate_word"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Translate Word"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="20sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_save"
+        android:src="@drawable/ic_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="@android:color/white"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:layout_margin="10dp"
+        android:focusable="true"/>
+
+</RelativeLayout>
